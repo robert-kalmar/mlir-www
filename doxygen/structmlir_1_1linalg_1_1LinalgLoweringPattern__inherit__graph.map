@@ -1,0 +1,4 @@
+<map id="mlir::linalg::LinalgLoweringPattern&lt; OpTy &gt;" name="mlir::linalg::LinalgLoweringPattern&lt; OpTy &gt;">
+<area shape="rect" id="node2" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="23,80,162,107"/>
+<area shape="rect" id="node3" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="46,5,139,32"/>
+</map>

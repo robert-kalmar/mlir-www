@@ -1,0 +1,27 @@
+<map id="mlir::ConversionPattern" name="mlir::ConversionPattern">
+<area shape="rect" id="node4" href="$classmlir_1_1ConvertToLLVMPattern.html" title="Base class for operation conversions targeting the LLVM IR dialect. " alt="" coords="544,195,732,222"/>
+<area shape="rect" id="node13" href="$structmlir_1_1OpConversionPattern.html" title="OpConversionPattern is a wrapper around ConversionPattern that allows for matching and rewriting agai..." alt="" coords="550,523,726,564"/>
+<area shape="rect" id="node22" href="$structmlir_1_1OpConversionPattern.html" title="mlir::OpConversionPattern\l\&lt; FuncOp \&gt;" alt="" coords="941,371,1117,412"/>
+<area shape="rect" id="node23" href="$structmlir_1_1OpConversionPattern.html" title="mlir::OpConversionPattern\l\&lt; CallOp \&gt;" alt="" coords="941,436,1117,477"/>
+<area shape="rect" id="node24" href="$structmlir_1_1OpConversionPattern.html" title="mlir::OpConversionPattern\l\&lt; SPIRVOp \&gt;" alt="" coords="941,701,1117,743"/>
+<area shape="rect" id="node26" href="$structmlir_1_1OpConversionPattern.html" title="mlir::OpConversionPattern\l\&lt; ReturnOpSourceTy \&gt;" alt="" coords="941,632,1117,673"/>
+<area shape="rect" id="node2" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="148,438,287,465"/>
+<area shape="rect" id="node3" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="5,438,99,465"/>
+<area shape="rect" id="node5" href="$classmlir_1_1ConvertOpToLLVMPattern.html" title="mlir::ConvertOpToLLVMPattern\l\&lt; SourceOp \&gt;" alt="" coords="1357,39,1563,80"/>
+<area shape="rect" id="node8" href="$classmlir_1_1ConvertOpToLLVMPattern.html" title="Utility class for operation conversions targeting the LLVM dialect that match exactly one source oper..." alt="" coords="927,5,1132,47"/>
+<area shape="rect" id="node9" href="$structmlir_1_1GPUFuncOpLowering.html" title="mlir::GPUFuncOpLowering\l\&lt; AllocaAddrSpace \&gt;" alt="" coords="940,123,1119,164"/>
+<area shape="rect" id="node10" href="$structmlir_1_1GPUIndexIntrinsicOpLowering.html" title="mlir::GPUIndexIntrinsicOp\lLowering\&lt; Op, XOp, YOp, ZOp \&gt;" alt="" coords="921,188,1137,229"/>
+<area shape="rect" id="node11" href="$structmlir_1_1GPUReturnOpLowering.html" title="mlir::GPUReturnOpLowering" alt="" coords="935,254,1123,281"/>
+<area shape="rect" id="node12" href="$structmlir_1_1OpToFuncCallLowering.html" title="Rewriting that replace SourceOp with a CallOp to f32Func or f64Func depending on the element type tha..." alt="" coords="936,305,1123,347"/>
+<area shape="rect" id="node6" href="$classmlir_1_1OneToOneConvertToLLVMPattern.html" title="Generic implementation of one&#45;to&#45;one conversion from &quot;SourceOp&quot; to &quot;TargetOp&quot; where the latter belong..." alt="" coords="1648,72,1899,113"/>
+<area shape="rect" id="node7" href="$classmlir_1_1VectorConvertToLLVMPattern.html" title="Basic lowering implementation to rewrite Ops with just one result to the LLVM Dialect. " alt="" coords="1660,7,1887,48"/>
+<area shape="rect" id="node14" href="$classmlir_1_1BufferAssignmentOpConversionPattern.html" title="Helper conversion pattern that encapsulates a BufferAssignmentPlacer instance. " alt="" coords="923,501,1135,543"/>
+<area shape="rect" id="node21" href="$classmlir_1_1SPIRVOpLowering.html" title="Base class to define a conversion pattern to lower SourceOp into SPIR&#45;V. " alt="" coords="949,567,1110,608"/>
+<area shape="rect" id="node15" href="$classmlir_1_1BufferAssignmentOpConversionPattern.html" title="mlir::BufferAssignmentOp\lConversionPattern\&lt; FuncOp \&gt;" alt="" coords="1360,411,1560,452"/>
+<area shape="rect" id="node17" href="$classmlir_1_1BufferAssignmentOpConversionPattern.html" title="mlir::BufferAssignmentOp\lConversionPattern\&lt; CallOp \&gt;" alt="" coords="1363,503,1557,544"/>
+<area shape="rect" id="node19" href="$classmlir_1_1BufferAssignmentOpConversionPattern.html" title="mlir::BufferAssignmentOp\lConversionPattern\&lt; ReturnOpSourceTy \&gt;" alt="" coords="1327,624,1593,665"/>
+<area shape="rect" id="node16" href="$classmlir_1_1detail_1_1BufferAssignmentFuncOpConverter.html" title="Converts the signature of the function based on whether the function is allowed to return memref type..." alt="" coords="1643,403,1904,459"/>
+<area shape="rect" id="node18" href="$classmlir_1_1detail_1_1BufferAssignmentCallOpConverter.html" title="Rewrites the CallOp to match its operands and results with the signature of the callee after rewritin..." alt="" coords="1646,495,1901,551"/>
+<area shape="rect" id="node20" href="$classmlir_1_1detail_1_1BufferAssignmentReturnOpConverter.html" title="Rewrites the ReturnOp to conform with the changed function signature. " alt="" coords="1651,609,1895,680"/>
+<area shape="rect" id="node25" href="$classmlir_1_1SPIRVToLLVMConversion.html" title="mlir::SPIRVToLLVMConversion\l\&lt; SPIRVOp \&gt;" alt="" coords="1357,701,1563,743"/>
+</map>

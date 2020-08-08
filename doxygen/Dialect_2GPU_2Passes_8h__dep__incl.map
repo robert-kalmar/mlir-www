@@ -1,0 +1,8 @@
+<map id="include/mlir/Dialect/GPU/Passes.h" name="include/mlir/Dialect/GPU/Passes.h">
+<area shape="rect" id="node2" href="$InitAllPasses_8h.html" title="include/mlir/InitAllPasses.h" alt="" coords="5,102,185,129"/>
+<area shape="rect" id="node3" href="$LowerGpuOpsToNVVMOps_8cpp.html" title="lib/Conversion/GPUToNVVM\l/LowerGpuOpsToNVVMOps.cpp" alt="" coords="209,95,421,136"/>
+<area shape="rect" id="node4" href="$LowerGpuOpsToROCDLOps_8cpp.html" title="lib/Conversion/GPUToROCDL\l/LowerGpuOpsToROCDLOps.cpp" alt="" coords="445,95,665,136"/>
+<area shape="rect" id="node5" href="$AllReduceLowering_8cpp.html" title="lib/Dialect/GPU/Transforms\l/AllReduceLowering.cpp" alt="" coords="689,95,872,136"/>
+<area shape="rect" id="node6" href="$KernelOutlining_8cpp.html" title="lib/Dialect/GPU/Transforms\l/KernelOutlining.cpp" alt="" coords="896,95,1079,136"/>
+<area shape="rect" id="node7" href="$ParallelLoopMapper_8cpp.html" title="lib/Dialect/GPU/Transforms\l/ParallelLoopMapper.cpp" alt="" coords="1103,95,1285,136"/>
+</map>

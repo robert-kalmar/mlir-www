@@ -1,0 +1,11 @@
+<map id="include/mlir/Dialect/LLVMIR/Transforms/LegalizeForExport.h" name="include/mlir/Dialect/LLVMIR/Transforms/LegalizeForExport.h">
+<area shape="rect" id="node2" href="$Dialect_2LLVMIR_2Transforms_2Passes_8h.html" title="include/mlir/Dialect\l/LLVMIR/Transforms/Passes.h" alt="" coords="187,109,390,151"/>
+<area shape="rect" id="node4" href="$ModuleTranslation_8h.html" title="include/mlir/Target\l/LLVMIR/ModuleTranslation.h" alt="" coords="506,109,701,151"/>
+<area shape="rect" id="node10" href="$LegalizeForExport_8cpp.html" title="lib/Dialect/LLVMIR\l/Transforms/LegalizeForExport.cpp" alt="" coords="725,109,951,151"/>
+<area shape="rect" id="node3" href="$InitAllPasses_8h.html" title="include/mlir/InitAllPasses.h" alt="" coords="5,206,185,233"/>
+<area shape="rect" id="node5" href="$ConvertToLLVMIR_8cpp.html" title="lib/Target/LLVMIR/Convert\lToLLVMIR.cpp" alt="" coords="210,199,389,240"/>
+<area shape="rect" id="node6" href="$ConvertToNVVMIR_8cpp.html" title="lib/Target/LLVMIR/Convert\lToNVVMIR.cpp" alt="" coords="413,199,591,240"/>
+<area shape="rect" id="node7" href="$ConvertToROCDLIR_8cpp.html" title="lib/Target/LLVMIR/Convert\lToROCDLIR.cpp" alt="" coords="615,199,794,240"/>
+<area shape="rect" id="node8" href="$LLVMAVX512Intr_8cpp.html" title="lib/Target/LLVMIR/LLVMAVX512\lIntr.cpp" alt="" coords="819,199,1033,240"/>
+<area shape="rect" id="node9" href="$ModuleTranslation_8cpp.html" title="lib/Target/LLVMIR/Module\lTranslation.cpp" alt="" coords="1057,199,1232,240"/>
+</map>

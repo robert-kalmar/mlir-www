@@ -1,0 +1,8 @@
+<map id="mlir::detail::OpaqueLocationStorage" name="mlir::detail::OpaqueLocationStorage">
+<area shape="rect" id="node2" href="$classmlir_1_1AttributeStorage.html" title="Base storage class appearing in an attribute. " alt="" coords="5,96,151,123"/>
+<area shape="rect" id="node6" href="$classmlir_1_1Attribute.html" title="Attributes are known&#45;constant values of operations and functions. " alt="" coords="100,185,200,212"/>
+<area shape="rect" id="node3" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="7,5,149,47"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Location.html" title="This class defines the main interface for locations in MLIR and acts as a non&#45;nullable wrapper around..." alt="" coords="100,351,200,377"/>
+<area shape="rect" id="node5" href="$classmlir_1_1LocationAttr.html" title="Location objects represent source locations information in MLIR. " alt="" coords="95,261,216,288"/>
+<area shape="rect" id="node7" href="$classmlir_1_1TypeID.html" title="This class provides an efficient unique identifier for a specific C++ type. " alt="" coords="228,351,323,377"/>
+</map>

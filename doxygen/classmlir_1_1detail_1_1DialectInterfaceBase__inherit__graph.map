@@ -1,0 +1,6 @@
+<map id="mlir::detail::DialectInterfaceBase&lt; ConcreteType, BaseT &gt;" name="mlir::detail::DialectInterfaceBase&lt; ConcreteType, BaseT &gt;">
+<area shape="rect" id="node3" href="$classmlir_1_1DialectInlinerInterface.html" title="This is the interface that must be implemented by the dialects of operations to be inlined..." alt="" coords="374,5,553,47"/>
+<area shape="rect" id="node4" href="$classmlir_1_1OpAsmDialectInterface.html" title="mlir::OpAsmDialectInterface\l\&lt; OpAsmDialectInterface \&gt;" alt="" coords="370,71,557,112"/>
+<area shape="rect" id="node5" href="$classmlir_1_1OpFolderDialectInterface.html" title="This class defines a dialect interface used to assist the operation folder. " alt="" coords="365,136,561,177"/>
+<area shape="rect" id="node2" href="$classBaseT.html" title="BaseT" alt="" coords="5,78,65,105"/>
+</map>

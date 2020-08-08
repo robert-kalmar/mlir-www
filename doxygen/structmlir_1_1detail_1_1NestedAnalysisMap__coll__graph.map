@@ -1,0 +1,5 @@
+<map id="mlir::detail::NestedAnalysisMap" name="mlir::detail::NestedAnalysisMap">
+<area shape="rect" id="node2" href="$classllvm_1_1DenseMap.html" title="llvm::DenseMap\&lt; mlir\l::Operation *, std::unique\l_ptr\&lt; mlir::detail::NestedAnalysis\lMap \&gt; \&gt;" alt="" coords="440,14,656,85"/>
+<area shape="rect" id="node3" href="$classllvm_1_1DenseMap.html" title="llvm::DenseMap\&lt; KeyT,\l ValueT, KeyInfoT, BucketT \&gt;" alt="" coords="5,29,203,70"/>
+<area shape="rect" id="node4" href="$classmlir_1_1detail_1_1AnalysisMap.html" title="This class represents a cache of analyses for a single operation. " alt="" coords="465,109,631,136"/>
+</map>

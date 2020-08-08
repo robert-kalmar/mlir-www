@@ -1,0 +1,9 @@
+<map id="mlir::OpTrait::detail::MultiRegionTraitBase&lt; ConcreteType, TraitType &gt;" name="mlir::OpTrait::detail::MultiRegionTraitBase&lt; ConcreteType, TraitType &gt;">
+<area shape="rect" id="node3" href="$structmlir_1_1OpTrait_1_1detail_1_1MultiRegionTraitBase.html" title="mlir::OpTrait::detail\l::MultiRegionTraitBase\l\&lt; ConcreteType, NRegions\l\&lt; N \&gt;::Impl \&gt;" alt="" coords="717,5,900,76"/>
+<area shape="rect" id="node5" href="$structmlir_1_1OpTrait_1_1detail_1_1MultiRegionTraitBase.html" title="mlir::OpTrait::detail\l::MultiRegionTraitBase\l\&lt; ConcreteType, AtLeastNRegions\l\&lt; N \&gt;::Impl \&gt;" alt="" coords="695,100,922,171"/>
+<area shape="rect" id="node7" href="$structmlir_1_1OpTrait_1_1detail_1_1MultiRegionTraitBase.html" title="mlir::OpTrait::detail\l::MultiRegionTraitBase\l\&lt; ConcreteType, VariadicRegions \&gt;" alt="" coords="693,195,924,251"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="Helper class for implementing traits. " alt="" coords="5,115,196,156"/>
+<area shape="rect" id="node4" href="$classmlir_1_1OpTrait_1_1NRegions_1_1Impl.html" title="mlir::OpTrait::NRegions\l\&lt; N \&gt;::Impl\&lt; ConcreteType \&gt;" alt="" coords="979,20,1173,61"/>
+<area shape="rect" id="node6" href="$classmlir_1_1OpTrait_1_1AtLeastNRegions_1_1Impl.html" title="mlir::OpTrait::AtLeastNRegions\l\&lt; N \&gt;::Impl\&lt; ConcreteType \&gt;" alt="" coords="973,115,1179,156"/>
+<area shape="rect" id="node8" href="$classmlir_1_1OpTrait_1_1VariadicRegions.html" title="This class provides the API for ops which have an unknown number of regions. " alt="" coords="977,203,1175,244"/>
+</map>

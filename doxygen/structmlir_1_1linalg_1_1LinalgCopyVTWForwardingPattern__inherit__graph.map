@@ -1,0 +1,6 @@
+<map id="mlir::linalg::LinalgCopyVTWForwardingPattern" name="mlir::linalg::LinalgCopyVTWForwardingPattern">
+<area shape="rect" id="node2" href="$structmlir_1_1OpRewritePattern.html" title="mlir::OpRewritePattern\l\&lt; vector::TransferWriteOp \&gt;" alt="" coords="5,261,192,303"/>
+<area shape="rect" id="node3" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="24,81,163,108"/>
+<area shape="rect" id="node5" href="$structmlir_1_1OpRewritePattern.html" title="OpRewritePattern is a wrapper around RewritePattern that allows for matching and rewriting against an..." alt="" coords="115,157,269,199"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="47,5,140,32"/>
+</map>

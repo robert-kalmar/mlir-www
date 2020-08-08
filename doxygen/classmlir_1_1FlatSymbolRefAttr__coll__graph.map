@@ -1,0 +1,5 @@
+<map id="mlir::FlatSymbolRefAttr" name="mlir::FlatSymbolRefAttr">
+<area shape="rect" id="node2" href="$classmlir_1_1SymbolRefAttr.html" title="A symbol reference attribute represents a symbolic reference to another operation. " alt="" coords="477,31,615,57"/>
+<area shape="rect" id="node3" href="$classmlir_1_1detail_1_1StorageUserBase.html" title="Utility class for implementing users of storage classes uniqued by a StorageUniquer. " alt="" coords="193,16,429,72"/>
+<area shape="rect" id="node4" href="$classBaseT.html" title="BaseT" alt="" coords="45,5,105,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="mlir::ModuleOp" name="mlir::ModuleOp">
+<area shape="rect" id="node2" href="$classmlir_1_1Op.html" title="mlir::Op\&lt; ModuleOp,\l OpTrait::ZeroOperands,\l OpTrait::ZeroResult,\l OpTrait::IsIsolatedFromAbove,\l OpTrait::AffineScope, OpTrait\l::SymbolTable, OpTrait::SingleBlockImplicit\lTerminator\&lt; ModuleTerminatorOp \&gt;::Impl,\l SymbolOpInterface::Trait, OpTrait::NoRegionArguments \&gt;" alt="" coords="1949,169,2313,298"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OpState.html" title="This is the concrete base class that holds the operation pointer and has non&#45;generic methods that onl..." alt="" coords="981,28,1080,55"/>
+<area shape="rect" id="node11" href="$classmlir_1_1Op.html" title="This provides public APIs that all operations should have. " alt="" coords="1427,162,1594,203"/>
+<area shape="rect" id="node4" href="$classmlir_1_1OpTrait_1_1ZeroOperands.html" title="mlir::OpTrait::ZeroOperands\l\&lt; ModuleOp \&gt;" alt="" coords="1419,310,1603,351"/>
+<area shape="rect" id="node5" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="mlir::OpTrait::TraitBase\l\&lt; ModuleOp, ZeroOperands \&gt;" alt="" coords="703,367,898,409"/>
+<area shape="rect" id="node6" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="Helper class for implementing traits. " alt="" coords="5,345,196,386"/>
+<area shape="rect" id="node8" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="mlir::OpTrait::TraitBase\l\&lt; ConcreteType, ZeroOperands \&gt;" alt="" coords="445,309,664,350"/>
+<area shape="rect" id="node7" href="$classmlir_1_1OpTrait_1_1ZeroOperands.html" title="This class provides the API for ops that are known to have no SSA operand. " alt="" coords="939,309,1123,350"/>
+<area shape="rect" id="node9" href="$classmlir_1_1FoldingHook.html" title="mlir::FoldingHook\&lt;\l ModuleOp, llvm::is\l_one_of\&lt; OpTrait::OneResult\l\&lt; ModuleOp \&gt;, OpTrait::ZeroOperands\l\&lt; ModuleOp \&gt;... \&gt;::value \&gt;" alt="" coords="1148,224,1395,309"/>
+<area shape="rect" id="node10" href="$classmlir_1_1FoldingHook.html" title="This template defines the foldHook as used by AbstractOperation. " alt="" coords="453,191,657,247"/>
+<area shape="rect" id="node13" href="$classmlir_1_1FoldingHook.html" title="mlir::FoldingHook\&lt;\l ConcreteType, llvm\l::is_one_of\&lt; OpTrait\l::OneResult\&lt; ConcreteType\l \&gt;, Traits\&lt; ConcreteType\l \&gt;... \&gt;::value \&gt;" alt="" coords="937,79,1124,179"/>
+</map>

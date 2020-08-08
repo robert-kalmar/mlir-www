@@ -1,0 +1,8 @@
+<map id="mlir::detail::VerifierPass" name="mlir::detail::VerifierPass">
+<area shape="rect" id="node2" href="$classmlir_1_1PassWrapper.html" title="mlir::PassWrapper\&lt;\l VerifierPass, OperationPass\&lt;\&gt; \&gt;" alt="" coords="87,304,306,345"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OperationPass.html" title="mlir::OperationPass\&lt;\&gt;" alt="" coords="36,193,189,219"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Pass.html" title="The abstract base pass class. " alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node5" href="$classmlir_1_1OperationPass.html" title="Pass to transform an operation of a specific type. " alt="" coords="68,81,205,123"/>
+<area shape="rect" id="node6" href="$classmlir_1_1PassWrapper.html" title="This class provides a CRTP wrapper around a base pass class to define several necessary utility metho..." alt="" coords="214,185,353,227"/>
+<area shape="rect" id="node7" href="$classBaseT.html" title="BaseT" alt="" coords="253,89,313,115"/>
+</map>

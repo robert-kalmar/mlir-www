@@ -1,0 +1,5 @@
+<map id="mlir::detail::OpaqueTypeStorage" name="mlir::detail::OpaqueTypeStorage">
+<area shape="rect" id="node2" href="$classmlir_1_1TypeStorage.html" title="Base storage class appearing in a Type. " alt="" coords="13,96,139,123"/>
+<area shape="rect" id="node3" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Identifier.html" title="This class represents a uniqued string owned by an MLIRContext. " alt="" coords="163,96,264,123"/>
+</map>

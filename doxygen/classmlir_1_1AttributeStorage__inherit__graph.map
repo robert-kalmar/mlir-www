@@ -1,0 +1,26 @@
+<map id="mlir::AttributeStorage" name="mlir::AttributeStorage">
+<area shape="rect" id="node3" href="$structmlir_1_1detail_1_1AffineMapAttributeStorage.html" title="mlir::detail::AffineMapAttribute\lStorage" alt="" coords="391,5,589,47"/>
+<area shape="rect" id="node4" href="$structmlir_1_1detail_1_1ArrayAttributeStorage.html" title="An attribute representing an array of other attributes. " alt="" coords="405,71,575,112"/>
+<area shape="rect" id="node5" href="$structmlir_1_1detail_1_1CallSiteLocationStorage.html" title="mlir::detail::CallSiteLocation\lStorage" alt="" coords="397,136,583,177"/>
+<area shape="rect" id="node6" href="$structmlir_1_1detail_1_1DenseElementsAttributeStorage.html" title="An attribute representing a reference to a dense vector or tensor object. " alt="" coords="399,201,581,243"/>
+<area shape="rect" id="node9" href="$structmlir_1_1detail_1_1DictionaryAttributeStorage.html" title="An attribute representing a dictionary of sorted named attributes. " alt="" coords="415,267,565,308"/>
+<area shape="rect" id="node10" href="$structmlir_1_1detail_1_1FileLineColLocationStorage.html" title="mlir::detail::FileLineCol\lLocationStorage" alt="" coords="413,332,567,373"/>
+<area shape="rect" id="node11" href="$structmlir_1_1detail_1_1FloatAttributeStorage.html" title="An attribute representing a floating point value. " alt="" coords="406,397,574,439"/>
+<area shape="rect" id="node12" href="$structmlir_1_1detail_1_1FusedLocationStorage.html" title="mlir::detail::FusedLocation\lStorage" alt="" coords="403,463,577,504"/>
+<area shape="rect" id="node13" href="$structmlir_1_1detail_1_1IntegerAttributeStorage.html" title="An attribute representing an integral value. " alt="" coords="401,528,579,569"/>
+<area shape="rect" id="node14" href="$structmlir_1_1detail_1_1IntegerSetAttributeStorage.html" title="mlir::detail::IntegerSet\lAttributeStorage" alt="" coords="415,593,565,635"/>
+<area shape="rect" id="node15" href="$structmlir_1_1detail_1_1NameLocationStorage.html" title="mlir::detail::NameLocation\lStorage" alt="" coords="403,659,577,700"/>
+<area shape="rect" id="node16" href="$structmlir_1_1detail_1_1OpaqueAttributeStorage.html" title="Opaque Attribute Storage and Uniquing. " alt="" coords="398,724,582,765"/>
+<area shape="rect" id="node17" href="$structmlir_1_1detail_1_1OpaqueElementsAttributeStorage.html" title="An attribute representing a reference to a tensor constant with opaque content. " alt="" coords="395,789,585,831"/>
+<area shape="rect" id="node18" href="$structmlir_1_1detail_1_1OpaqueLocationStorage.html" title="mlir::detail::OpaqueLocation\lStorage" alt="" coords="398,855,582,896"/>
+<area shape="rect" id="node19" href="$structmlir_1_1detail_1_1SparseElementsAttributeStorage.html" title="An attribute representing a reference to a sparse vector or tensor object. " alt="" coords="397,920,583,961"/>
+<area shape="rect" id="node20" href="$structmlir_1_1detail_1_1StringAttributeStorage.html" title="An attribute representing a string value. " alt="" coords="403,985,577,1027"/>
+<area shape="rect" id="node21" href="$structmlir_1_1detail_1_1SymbolRefAttributeStorage.html" title="An attribute representing a symbol reference. " alt="" coords="388,1051,592,1092"/>
+<area shape="rect" id="node22" href="$structmlir_1_1detail_1_1TypeAttributeStorage.html" title="An attribute representing a reference to a type. " alt="" coords="406,1116,574,1157"/>
+<area shape="rect" id="node23" href="$structmlir_1_1spirv_1_1detail_1_1InterfaceVarABIAttributeStorage.html" title="mlir::spirv::detail\l::InterfaceVarABIAttribute\lStorage" alt="" coords="404,1182,576,1238"/>
+<area shape="rect" id="node24" href="$structmlir_1_1spirv_1_1detail_1_1TargetEnvAttributeStorage.html" title="mlir::spirv::detail\l::TargetEnvAttributeStorage" alt="" coords="398,1263,582,1304"/>
+<area shape="rect" id="node25" href="$structmlir_1_1spirv_1_1detail_1_1VerCapExtAttributeStorage.html" title="mlir::spirv::detail\l::VerCapExtAttributeStorage" alt="" coords="396,1328,584,1369"/>
+<area shape="rect" id="node2" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="5,659,147,700"/>
+<area shape="rect" id="node7" href="$structmlir_1_1detail_1_1DenseIntOrFPElementsAttributeStorage.html" title="An attribute representing a reference to a dense vector or tensor object. " alt="" coords="640,169,828,211"/>
+<area shape="rect" id="node8" href="$structmlir_1_1detail_1_1DenseStringElementsAttributeStorage.html" title="An attribute representing a reference to a dense vector or tensor object containing strings..." alt="" coords="649,235,819,276"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="mlir::OwningModuleRef" name="mlir::OwningModuleRef">
+<area shape="rect" id="node2" href="$classmlir_1_1OwningOpRefBase.html" title="mlir::OwningOpRefBase\l\&lt; ModuleOp \&gt;" alt="" coords="5,109,168,151"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OwningOpRefBase.html" title="This class acts as an owning reference to an op, and will automatically destroy the held op on destru..." alt="" coords="5,5,168,47"/>
+</map>

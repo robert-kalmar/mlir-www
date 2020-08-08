@@ -1,0 +1,4 @@
+<map id="include/mlir/Transforms/BufferPlacement.h" name="include/mlir/Transforms/BufferPlacement.h">
+<area shape="rect" id="node2" href="$TensorsToBuffers_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/TensorsToBuffers.cpp" alt="" coords="5,95,231,136"/>
+<area shape="rect" id="node3" href="$BufferPlacement_8cpp.html" title="lib/Transforms/BufferPlacement.cpp" alt="" coords="255,102,485,129"/>
+</map>

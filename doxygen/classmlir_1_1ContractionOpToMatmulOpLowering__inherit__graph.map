@@ -1,0 +1,6 @@
+<map id="mlir::ContractionOpToMatmulOpLowering" name="mlir::ContractionOpToMatmulOpLowering">
+<area shape="rect" id="node2" href="$structmlir_1_1OpRewritePattern.html" title="mlir::OpRewritePattern\l\&lt; vector::ContractionOp \&gt;" alt="" coords="15,261,189,303"/>
+<area shape="rect" id="node3" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="27,81,166,108"/>
+<area shape="rect" id="node5" href="$structmlir_1_1OpRewritePattern.html" title="OpRewritePattern is a wrapper around RewritePattern that allows for matching and rewriting against an..." alt="" coords="118,157,273,199"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="50,5,143,32"/>
+</map>

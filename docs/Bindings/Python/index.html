@@ -1,0 +1,167 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>MLIR Python Bindings - MLIR</title><meta name=description content="Multi-Level IR Compiler Framework"><meta name=generator content="Hugo 0.64.1"><link href=https://mlir.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://mlir.llvm.org/docs/Bindings/Python/><link rel=stylesheet href=https://mlir.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script><link rel=stylesheet href=https://mlir.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script><script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script><script src=https://mlir.llvm.org/js/bundle.js></script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://mlir.llvm.org//mlir-logo.png width=40px align=absmiddle>
+MLIR</div></h1><p class=description>Multi-Level IR Compiler Framework</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/mlir/31>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li><a href=/getting_started/Debugging/>Debugging</a></li><li><a href=/getting_started/Faq/>FAQ</a></li><li class=parent><a href=https://github.com/llvm/llvm-project/tree/master/mlir>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/llvm-project/tree/master/mlir>GitHub</a></li></ul></li><li><a href="https://bugs.llvm.org/buglist.cgi?bug_status=__open__&list_id=177877&order=changeddate%20DESC%2Cpriority%2Cbug_severity&product=MLIR&query_format=specific">Bugs</a></li></ul></nav></div><div class=content-container><main><h1>MLIR Python Bindings</h1><p>Current status: Under development and not enabled by default</p><h2 id=building>Building&nbsp;<a class=headline-hash href=#building>¶</a></h2><h3 id=pre-requisites>Pre-requisites&nbsp;<a class=headline-hash href=#pre-requisites>¶</a></h3><ul><li><a href=https://github.com/pybind/pybind11><code>pybind11</code></a>
+must be installed and able to
+be located by CMake.</li><li>A relatively recent Python3 installation</li></ul><h3 id=cmake-variables>CMake variables&nbsp;<a class=headline-hash href=#cmake-variables>¶</a></h3><ul><li><p><strong><code>MLIR_BINDINGS_PYTHON_ENABLED</code></strong><code>:BOOL</code></p><p>Enables building the Python bindings. Defaults to <code>OFF</code>.</p></li><li><p><strong><code>MLIR_PYTHON_BINDINGS_VERSION_LOCKED</code></strong><code>:BOOL</code></p><p>Links the native extension against the Python runtime library, which is
+optional on some platforms. While setting this to <code>OFF</code> can yield some greater
+deployment flexibility, linking in this way allows the linker to report
+compile time errors for unresolved symbols on all platforms, which makes for a
+smoother development workflow. Defaults to <code>ON</code>.</p></li><li><p><strong><code>PYTHON_EXECUTABLE</code></strong>:<code>STRING</code></p><p>Specifies the <code>python</code> executable used for the LLVM build, including for
+determining header/link flags for the Python bindings. On systems with
+multiple Python implementations, setting this explicitly to the preferred
+<code>python3</code> executable is strongly recommended.</p></li></ul><h2 id=design>Design&nbsp;<a class=headline-hash href=#design>¶</a></h2><h3 id=use-cases>Use cases&nbsp;<a class=headline-hash href=#use-cases>¶</a></h3><p>There are likely two primary use cases for the MLIR python bindings:</p><ol><li><p>Support users who expect that an installed version of LLVM/MLIR will yield
+the ability to <code>import mlir</code> and use the API in a pure way out of the box.</p></li><li><p>Downstream integrations will likely want to include parts of the API in their
+private namespace or specially built libraries, probably mixing it with other
+python native bits.</p></li></ol><h3 id=composable-modules>Composable modules&nbsp;<a class=headline-hash href=#composable-modules>¶</a></h3><p>In order to support use case #2, the Python bindings are organized into
+composable modules that downstream integrators can include and re-export into
+their own namespace if desired. This forces several design points:</p><ul><li><p>Separate the construction/populating of a <code>py::module</code> from <code>PYBIND11_MODULE</code>
+global constructor.</p></li><li><p>Introduce headers for C++-only wrapper classes as other related C++ modules
+will need to interop with it.</p></li><li><p>Separate any initialization routines that depend on optional components into
+its own module/dependency (currently, things like <code>registerAllDialects</code> fall
+into this category).</p></li></ul><p>There are a lot of co-related issues of shared library linkage, distribution
+concerns, etc that affect such things. Organizing the code into composable
+modules (versus a monolithic <code>cpp</code> file) allows the flexibility to address many
+of these as needed over time. Also, compilation time for all of the template
+meta-programming in pybind scales with the number of things you define in a
+translation unit. Breaking into multiple translation units can significantly aid
+compile times for APIs with a large surface area.</p><h3 id=submodules>Submodules&nbsp;<a class=headline-hash href=#submodules>¶</a></h3><p>Generally, the C++ codebase namespaces most things into the <code>mlir</code> namespace.
+However, in order to modularize and make the Python bindings easier to
+understand, sub-packages are defined that map roughly to the directory structure
+of functional units in MLIR.</p><p>Examples:</p><ul><li><code>mlir.ir</code></li><li><code>mlir.passes</code> (<code>pass</code> is a reserved word :( )</li><li><code>mlir.dialect</code></li><li><code>mlir.execution_engine</code> (aside from namespacing, it is important that
+&ldquo;bulky&rdquo;/optional parts like this are isolated)</li></ul><p>In addition, initialization functions that imply optional dependencies should
+be in underscored (notionally private) modules such as <code>_init</code> and linked
+separately. This allows downstream integrators to completely customize what is
+included &ldquo;in the box&rdquo; and covers things like dialect registration,
+pass registration, etc.</p><h3 id=loader>Loader&nbsp;<a class=headline-hash href=#loader>¶</a></h3><p>LLVM/MLIR is a non-trivial python-native project that is likely to co-exist with
+other non-trivial native extensions. As such, the native extension (i.e. the
+<code>.so</code>/<code>.pyd</code>/<code>.dylib</code>) is exported as a notionally private top-level symbol
+(<code>_mlir</code>), while a small set of Python code is provided in <code>mlir/__init__.py</code>
+and siblings which loads and re-exports it. This split provides a place to stage
+code that needs to prepare the environment <em>before</em> the shared library is loaded
+into the Python runtime, and also provides a place that one-time initialization
+code can be invoked apart from module constructors.</p><p>To start with the <code>mlir/__init__.py</code> loader shim can be very simple and scale to
+future need:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=kn>from</span> <span class=nn>_mlir</span> <span class=kn>import</span> <span class=o>*</span>
+</code></pre></div><h3 id=limited-use-of-globals>Limited use of globals&nbsp;<a class=headline-hash href=#limited-use-of-globals>¶</a></h3><p>For normal operations, parent-child constructor relationships are realized with
+constructor methods on a parent class as opposed to requiring
+invocation/creation from a global symbol.</p><p>For example, consider two code fragments:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python>
+<span class=n>op</span> <span class=o>=</span> <span class=n>build_my_op</span><span class=p>(</span><span class=p>)</span>
+
+<span class=n>region</span> <span class=o>=</span> <span class=n>mlir</span><span class=o>.</span><span class=n>Region</span><span class=p>(</span><span class=n>op</span><span class=p>)</span>
+
+</code></pre></div><p>vs</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python>
+<span class=n>op</span> <span class=o>=</span> <span class=n>build_my_op</span><span class=p>(</span><span class=p>)</span>
+
+<span class=n>region</span> <span class=o>=</span> <span class=n>op</span><span class=o>.</span><span class=n>new_region</span><span class=p>(</span><span class=p>)</span>
+
+</code></pre></div><p>For tightly coupled data structures like <code>Operation</code>, the latter is generally
+preferred because:</p><ul><li><p>It is syntactically less possible to create something that is going to access
+illegal memory (less error handling in the bindings, less testing, etc).</p></li><li><p>It reduces the global-API surface area for creating related entities. This
+makes it more likely that if constructing IR based on an Operation instance of
+unknown providence, receiving code can just call methods on it to do what they
+want versus needing to reach back into the global namespace and find the right
+<code>Region</code> class.</p></li><li><p>It leaks fewer things that are in place for C++ convenience (i.e. default
+constructors to invalid instances).</p></li></ul><h3 id=use-the-c-api>Use the C-API&nbsp;<a class=headline-hash href=#use-the-c-api>¶</a></h3><p>The Python APIs should seek to layer on top of the C-API to the degree possible.
+Especially for the core, dialect-independent parts, such a binding enables
+packaging decisions that would be difficult or impossible if spanning a C++ ABI
+boundary. In addition, factoring in this way side-steps some very difficult
+issues that arise when combining RTTI-based modules (which pybind derived things
+are) with non-RTTI polymorphic C++ code (the default compilation mode of LLVM).</p><h2 id=style>Style&nbsp;<a class=headline-hash href=#style>¶</a></h2><p>In general, for the core parts of MLIR, the Python bindings should be largely
+isomorphic with the underlying C++ structures. However, concessions are made
+either for practicality or to give the resulting library an appropriately
+&ldquo;Pythonic&rdquo; flavor.</p><h3 id=properties-vs-get-methods>Properties vs get*() methods&nbsp;<a class=headline-hash href=#properties-vs-get-methods>¶</a></h3><p>Generally favor converting trivial methods like <code>getContext()</code>, <code>getName()</code>,
+<code>isEntryBlock()</code>, etc to read-only Python properties (i.e. <code>context</code>). It is
+primarily a matter of calling <code>def_property_readonly</code> vs <code>def</code> in binding code,
+and makes things feel much nicer to the Python side.</p><p>For example, prefer:</p><div class=highlight><pre class=chroma><code class=language-c++ data-lang=c++><span class=n>m</span><span class=p>.</span><span class=n>def_property_readonly</span><span class=p>(</span><span class=sa></span><span class=s>&#34;</span><span class=s>context</span><span class=s>&#34;</span><span class=p>,</span> <span class=p>.</span><span class=p>.</span><span class=p>.</span><span class=p>)</span>
+</code></pre></div><p>Over:</p><div class=highlight><pre class=chroma><code class=language-c++ data-lang=c++><span class=n>m</span><span class=p>.</span><span class=n>def</span><span class=p>(</span><span class=sa></span><span class=s>&#34;</span><span class=s>getContext</span><span class=s>&#34;</span><span class=p>,</span> <span class=p>.</span><span class=p>.</span><span class=p>.</span><span class=p>)</span>
+</code></pre></div><h3 id=__repr__-methods><strong>repr</strong> methods&nbsp;<a class=headline-hash href=#__repr__-methods>¶</a></h3><p>Things that have nice printed representations are really great :) If there is a
+reasonable printed form, it can be a significant productivity boost to wire that
+to the <code>__repr__</code> method (and verify it with a
+<a href=#sample-doctest>doctest</a>
+).</p><h3 id=camelcase-vs-snake_case>CamelCase vs snake_case&nbsp;<a class=headline-hash href=#camelcase-vs-snake_case>¶</a></h3><p>Name functions/methods/properties in <code>snake_case</code> and classes in <code>CamelCase</code>. As
+a mechanical concession to Python style, this can go a long way to making the
+API feel like it fits in with its peers in the Python landscape.</p><p>If in doubt, choose names that will flow properly with other
+<a href=https://pep8.org/#descriptive-naming-styles>PEP 8 style names</a>
+.</p><h3 id=prefer-pseudo-containers>Prefer pseudo-containers&nbsp;<a class=headline-hash href=#prefer-pseudo-containers>¶</a></h3><p>Many core IR constructs provide methods directly on the instance to query count
+and begin/end iterators. Prefer hoisting these to dedicated pseudo containers.</p><p>For example, a direct mapping of blocks within regions could be done this way:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>region</span> <span class=o>=</span> <span class=o>.</span><span class=o>.</span><span class=o>.</span>
+
+<span class=k>for</span> <span class=n>block</span> <span class=ow>in</span> <span class=n>region</span><span class=p>:</span>
+
+  <span class=k>pass</span>
+</code></pre></div><p>However, this way is preferred:</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>region</span> <span class=o>=</span> <span class=o>.</span><span class=o>.</span><span class=o>.</span>
+
+<span class=k>for</span> <span class=n>block</span> <span class=ow>in</span> <span class=n>region</span><span class=o>.</span><span class=n>blocks</span><span class=p>:</span>
+
+  <span class=k>pass</span>
+
+<span class=k>print</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>region</span><span class=o>.</span><span class=n>blocks</span><span class=p>)</span><span class=p>)</span>
+<span class=k>print</span><span class=p>(</span><span class=n>region</span><span class=o>.</span><span class=n>blocks</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=p>)</span>
+<span class=k>print</span><span class=p>(</span><span class=n>region</span><span class=o>.</span><span class=n>blocks</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=p>)</span>
+</code></pre></div><p>Instead of leaking STL-derived identifiers (<code>front</code>, <code>back</code>, etc), translate
+them to appropriate <code>__dunder__</code> methods and iterator wrappers in the bindings.</p><p>Note that this can be taken too far, so use good judgment. For example, block
+arguments may appear container-like but have defined methods for lookup and
+mutation that would be hard to model properly without making semantics
+complicated. If running into these, just mirror the C/C++ API.</p><h3 id=provide-one-stop-helpers-for-common-things>Provide one stop helpers for common things&nbsp;<a class=headline-hash href=#provide-one-stop-helpers-for-common-things>¶</a></h3><p>One stop helpers that aggregate over multiple low level entities can be
+incredibly helpful and are encouraged within reason. For example, making
+<code>Context</code> have a <code>parse_asm</code> or equivalent that avoids needing to explicitly
+construct a SourceMgr can be quite nice. One stop helpers do not have to be
+mutually exclusive with a more complete mapping of the backing constructs.</p><h2 id=testing>Testing&nbsp;<a class=headline-hash href=#testing>¶</a></h2><p>Tests should be added in the <code>test/Bindings/Python</code> directory and should
+typically be <code>.py</code> files that have a lit run line.</p><p>While lit can run any python module, prefer to lay tests out according to these
+rules:</p><ul><li>For tests of the API surface area, prefer
+<a href=https://docs.python.org/3/library/doctest.html><code>doctest</code></a>
+.</li><li>For generative tests (those that produce IR), define a Python module that
+constructs/prints the IR and pipe it through <code>FileCheck</code>.</li><li>Parsing should be kept self-contained within the module under test by use of
+raw constants and an appropriate <code>parse_asm</code> call.</li><li>Any file I/O code should be staged through a tempfile vs relying on file
+artifacts/paths outside of the test module.</li></ul><h3 id=sample-doctest>Sample Doctest&nbsp;<a class=headline-hash href=#sample-doctest>¶</a></h3><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=c1># RUN: %PYTHON %s</span>
+
+<span class=sa></span><span class=s2>&#34;&#34;&#34;</span><span class=s2>
+</span><span class=s2></span><span class=s2>  &gt;&gt;&gt; m = load_test_module()</span><span class=s2>
+</span><span class=s2></span><span class=s2>Test basics:</span><span class=s2>
+</span><span class=s2></span><span class=s2>  &gt;&gt;&gt; m.operation.name</span><span class=s2>
+</span><span class=s2></span><span class=s2>  </span><span class=s2>&#34;</span><span class=s2>module</span><span class=s2>&#34;</span><span class=s2>
+</span><span class=s2></span><span class=s2>  &gt;&gt;&gt; m.operation.is_registered</span><span class=s2>
+</span><span class=s2></span><span class=s2>  True</span><span class=s2>
+</span><span class=s2></span><span class=s2>  &gt;&gt;&gt; ... etc ...</span><span class=s2>
+</span><span class=s2></span><span class=s2>
+</span><span class=s2></span><span class=s2>Verify that repr prints:</span><span class=s2>
+</span><span class=s2></span><span class=s2>  &gt;&gt;&gt; m.operation</span><span class=s2>
+</span><span class=s2></span><span class=s2>  &lt;operation </span><span class=s2>&#39;</span><span class=s2>module</span><span class=s2>&#39;</span><span class=s2>&gt;</span><span class=s2>
+</span><span class=s2></span><span class=s2>&#34;&#34;&#34;</span>
+
+<span class=kn>import</span> <span class=nn>mlir</span>
+
+<span class=n>TEST_MLIR_ASM</span> <span class=o>=</span> <span class=sa>r</span><span class=s2>&#34;&#34;&#34;</span><span class=s2>
+</span><span class=s2></span><span class=s2>func @test_operation_correct_regions() {</span><span class=s2>
+</span><span class=s2></span><span class=s2>  // ...</span><span class=s2>
+</span><span class=s2></span><span class=s2>}</span><span class=s2>
+</span><span class=s2></span><span class=s2>&#34;&#34;&#34;</span>
+
+<span class=c1># TODO: Move to a test utility class once any of this actually exists.</span>
+<span class=k>def</span> <span class=nf>load_test_module</span><span class=p>(</span><span class=p>)</span><span class=p>:</span>
+  <span class=n>ctx</span> <span class=o>=</span> <span class=n>mlir</span><span class=o>.</span><span class=n>ir</span><span class=o>.</span><span class=n>Context</span><span class=p>(</span><span class=p>)</span>
+  <span class=n>ctx</span><span class=o>.</span><span class=n>allow_unregistered_dialects</span> <span class=o>=</span> <span class=bp>True</span>
+  <span class=n>module</span> <span class=o>=</span> <span class=n>ctx</span><span class=o>.</span><span class=n>parse_asm</span><span class=p>(</span><span class=n>TEST_MLIR_ASM</span><span class=p>)</span>
+  <span class=k>return</span> <span class=n>module</span>
+
+
+<span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=sa></span><span class=s2>&#34;</span><span class=s2>__main__</span><span class=s2>&#34;</span><span class=p>:</span>
+  <span class=kn>import</span> <span class=nn>doctest</span>
+  <span class=n>doctest</span><span class=o>.</span><span class=n>testmod</span><span class=p>(</span><span class=p>)</span>
+</code></pre></div><h3 id=sample-filecheck-test>Sample FileCheck test&nbsp;<a class=headline-hash href=#sample-filecheck-test>¶</a></h3><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=c1># RUN: %PYTHON %s | mlir-opt -split-input-file | FileCheck</span>
+
+<span class=c1># TODO: Move to a test utility class once any of this actually exists.</span>
+<span class=k>def</span> <span class=nf>print_module</span><span class=p>(</span><span class=n>f</span><span class=p>)</span><span class=p>:</span>
+  <span class=n>m</span> <span class=o>=</span> <span class=n>f</span><span class=p>(</span><span class=p>)</span>
+  <span class=k>print</span><span class=p>(</span><span class=sa></span><span class=s2>&#34;</span><span class=s2>// -----</span><span class=s2>&#34;</span><span class=p>)</span>
+  <span class=k>print</span><span class=p>(</span><span class=sa></span><span class=s2>&#34;</span><span class=s2>// TEST_FUNCTION:</span><span class=s2>&#34;</span><span class=p>,</span> <span class=n>f</span><span class=o>.</span><span class=vm>__name__</span><span class=p>)</span>
+  <span class=k>print</span><span class=p>(</span><span class=n>m</span><span class=o>.</span><span class=n>to_asm</span><span class=p>(</span><span class=p>)</span><span class=p>)</span>
+  <span class=k>return</span> <span class=n>f</span>
+
+<span class=c1># CHECK-LABEL: TEST_FUNCTION: create_my_op</span>
+<span class=nd>@print_module</span>
+<span class=k>def</span> <span class=nf>create_my_op</span><span class=p>(</span><span class=p>)</span><span class=p>:</span>
+  <span class=n>m</span> <span class=o>=</span> <span class=n>mlir</span><span class=o>.</span><span class=n>ir</span><span class=o>.</span><span class=n>Module</span><span class=p>(</span><span class=p>)</span>
+  <span class=n>builder</span> <span class=o>=</span> <span class=n>m</span><span class=o>.</span><span class=n>new_op_builder</span><span class=p>(</span><span class=p>)</span>
+  <span class=c1># CHECK: mydialect.my_operation ...</span>
+  <span class=n>builder</span><span class=o>.</span><span class=n>my_op</span><span class=p>(</span><span class=p>)</span>
+  <span class=k>return</span> <span class=n>m</span>
+</code></pre></div><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=/docs/Bindings/ title=Bindings><i class="fas fa-arrow-left" aria-hidden=true></i>Prev - Bindings</a>
+<a class="nav nav-next" href=/docs/Dialects/ title=Dialects>Next - Dialects <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://mlir.llvm.org/>Home</a></li><li><a href=/talks/>Talks and Related Publications</a></li><li><a href=/users/>Users of MLIR</a></li><li class=has-sub-menu><a href=/getting_started/>Getting Started<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=/getting_started/Debugging/>Debugging</a></li><li><a href=/getting_started/Faq/>FAQ</a></li><li><a href=/getting_started/Contributing/>How to Contribute</a></li><li><a href=/getting_started/DeveloperGuide/>Developer Guide</a></li><li><a href=/getting_started/openprojects/>Open Projects</a></li><li><a href=/getting_started/Glossary/>Glossary</a></li><li><a href=/getting_started/TestingGuide/>Testing Guide</a></li></ul></li><li class="parent has-sub-menu"><a href=/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class="parent has-sub-menu"><a href=/docs/Bindings/>Bindings<span class="mark opened">-</span></a><ul class=sub-menu><li class=active><a href=/docs/Bindings/Python/>MLIR Python Bindings</a></li></ul></li><li class=has-sub-menu><a href=/docs/Dialects/>Dialects<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=/docs/Dialects/Affine/>'affine' Dialect</a></li><li><a href=/docs/Dialects/GPU/>'gpu' Dialect</a></li><li><a href=/docs/Dialects/Linalg/>'linalg' Dialect</a></li><li><a href=/docs/Dialects/LLVM/>'llvm' Dialect</a></li><li><a href=/docs/Dialects/NVVMDialect/>'nvvm' Dialect</a></li><li><a href=/docs/Dialects/OpenMPDialect/>'omp' Dialect</a></li><li><a href=/docs/Dialects/QuantDialect/>'quant' Dialect</a></li><li><a href=/docs/Dialects/ROCDLDialect/>'rocdl' Dialect</a></li><li><a href=/docs/Dialects/SCFDialect/>'scf' Dialect</a></li><li><a href=/docs/Dialects/ShapeDialect/>'shape' Dialect</a></li><li><a href=/docs/Dialects/SPIR-V/>'spv' Dialect</a></li><li><a href=/docs/Dialects/Standard/>'std' Dialect</a></li><li><a href=/docs/Dialects/Vector/>'vector' Dialect</a></li></ul></li><li class=has-sub-menu><a href=/docs/Rationale/>Rationale<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=/docs/Rationale/RationaleLinalgDialect/>Linalg Dialect Rationale: The Case For Compiler-Friendly Custom Operations</a></li><li><a href=/docs/Rationale/Rationale/>MLIR Rationale</a></li><li><a href=/docs/Rationale/MLIRForGraphAlgorithms/>MLIR: Incremental Application to Graph Algorithms in ML Frameworks</a></li><li><a href=/docs/Rationale/RationaleSimplifiedPolyhedralForm/>MLIR: The case for a simplified polyhedral form</a></li><li><a href=/docs/Rationale/UsageOfConst/>Usage of 'Const' in MLIR, for core IR types</a></li></ul></li><li class=has-sub-menu><a href=/docs/Tutorials/>Tutorials<span class="mark closed">+</span></a><ul class=sub-menu><li class=has-sub-menu><a href=/docs/Tutorials/Toy/>Toy<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=/docs/Tutorials/Toy/Ch-1/>Chapter 1: Toy Tutorial Introduction</a></li><li><a href=/docs/Tutorials/Toy/Ch-2/>Chapter 2: Emitting Basic MLIR</a></li><li><a href=/docs/Tutorials/Toy/Ch-3/>Chapter 3: High-level Language-Specific Analysis and Transformation</a></li><li><a href=/docs/Tutorials/Toy/Ch-4/>Chapter 4: Enabling Generic Transformation with Interfaces</a></li><li><a href=/docs/Tutorials/Toy/Ch-5/>Chapter 5: Partial Lowering to Lower-Level Dialects for Optimization</a></li><li><a href=/docs/Tutorials/Toy/Ch-6/>Chapter 6: Lowering to LLVM and CodeGeneration</a></li><li><a href=/docs/Tutorials/Toy/Ch-7/>Chapter 7: Adding a Composite Type to Toy</a></li></ul></li><li><a href=/docs/Tutorials/CreatingADialect/>Creating a Dialect</a></li><li><a href=/docs/Tutorials/DefiningAttributesAndTypes/>Defining Dialect Attributes and Types</a></li><li><a href=/docs/Tutorials/QuickstartRewrites/>Quickstart tutorial to adding MLIR graph rewrite</a></li></ul></li><li><a href=/docs/ReducerPasses/></a></li><li><a href=/docs/SCFPasses/></a></li><li><a href=/docs/EDSC/>Background: declarative builders API</a></li><li><a href=/docs/ConversionToLLVMDialect/>Conversion to the LLVM Dialect</a></li><li><a href=/docs/Diagnostics/>Diagnostic Infrastructure</a></li><li><a href=/docs/DialectConversion/>Dialect Conversion</a></li><li><a href=/docs/GenericDAGRewriter/>Generic DAG Rewriter Infrastructure</a></li><li><a href=/docs/Interfaces/>Interfaces</a></li><li><a href=/docs/CAPI/>MLIR C API</a></li><li><a href=/docs/LangRef/>MLIR Language Reference</a></li><li><a href=/docs/Canonicalization/>Operation Canonicalization</a></li><li><a href=/docs/OpDefinitions/>Operation Definition Specification (ODS)</a></li><li><a href=/docs/PassManagement/>Pass Infrastructure</a></li><li><a href=/docs/Passes/>Passes</a></li><li><a href=/docs/Quantization/>Quantization</a></li><li><a href=/docs/ShapeInference/>Shape Inference</a></li><li><a href=/docs/SPIRVToLLVMDialectConversion/>SPIR-V Dialect to LLVM Dialect conversion manual</a></li><li><a href=/docs/SymbolsAndSymbolTables/>Symbols and Symbol Tables</a></li><li><a href=/docs/DeclarativeRewrites/>Table-driven Declarative Rewrite Rule (DRR)</a></li><li><a href=/docs/Traits/>Traits</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i><i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

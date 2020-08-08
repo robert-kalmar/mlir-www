@@ -1,0 +1,7 @@
+<map id="mlir::linalg::LinalgVectorizationPattern&lt; OpTy &gt;" name="mlir::linalg::LinalgVectorizationPattern&lt; OpTy &gt;">
+<area shape="rect" id="node2" href="$structmlir_1_1linalg_1_1LinalgBaseVectorizationPattern.html" title="Linalg vectorization patterns. " alt="" coords="28,289,181,331"/>
+<area shape="rect" id="node3" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="35,213,174,240"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="9,117,102,143"/>
+<area shape="rect" id="node5" href="$classllvm_1_1SmallVector.html" title="llvm::SmallVector\&lt;\l mlir::OperationName, 2 \&gt;" alt="" coords="126,109,299,151"/>
+<area shape="rect" id="node6" href="$classllvm_1_1SmallVector.html" title="llvm::SmallVector\&lt;\l T, N \&gt;" alt="" coords="146,5,279,47"/>
+</map>

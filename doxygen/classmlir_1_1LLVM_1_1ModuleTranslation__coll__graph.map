@@ -1,0 +1,5 @@
+<map id="mlir::LLVM::ModuleTranslation" name="mlir::LLVM::ModuleTranslation">
+<area shape="rect" id="node3" href="$classllvm_1_1DenseMap.html" title="llvm::DenseMap\&lt; mlir\l::Block *, llvm::BasicBlock *\&gt;" alt="" coords="371,57,566,98"/>
+<area shape="rect" id="node4" href="$classllvm_1_1DenseMap.html" title="llvm::DenseMap\&lt; KeyT,\l ValueT, KeyInfoT, BucketT \&gt;" alt="" coords="5,90,203,131"/>
+<area shape="rect" id="node5" href="$classllvm_1_1DenseMap.html" title="llvm::DenseMap\&lt; mlir\l::Value, llvm::Value *\&gt;" alt="" coords="392,122,545,163"/>
+</map>

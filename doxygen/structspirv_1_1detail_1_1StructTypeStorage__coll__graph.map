@@ -1,0 +1,6 @@
+<map id="mlir::spirv::detail::StructTypeStorage" name="mlir::spirv::detail::StructTypeStorage">
+<area shape="rect" id="node2" href="$classmlir_1_1TypeStorage.html" title="Base storage class appearing in a Type. " alt="" coords="196,13,321,39"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Type.html" title="Instances of the Type class are uniqued, have an immutable identifier and an optional mutable compone..." alt="" coords="508,46,588,73"/>
+<area shape="rect" id="node3" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node6" href="$structmlir_1_1spirv_1_1StructType_1_1MemberDecorationInfo.html" title="mlir::spirv::StructType\l::MemberDecorationInfo" alt="" coords="467,160,629,201"/>
+</map>

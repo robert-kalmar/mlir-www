@@ -1,0 +1,15 @@
+<map id="mlir::AffineWriteOpInterface" name="mlir::AffineWriteOpInterface">
+<area shape="rect" id="node2" href="$classmlir_1_1OpInterface.html" title="mlir::OpInterface\&lt;\l AffineWriteOpInterface,\l detail::AffineWriteOpInterface\lInterfaceTraits \&gt;" alt="" coords="2516,180,2715,251"/>
+<area shape="rect" id="node3" href="$classmlir_1_1detail_1_1Interface.html" title="mlir::detail::Interface\l\&lt; AffineWriteOpInterface,\l Operation *, detail::AffineWrite\lOpInterfaceInterfaceTraits, Op\l\&lt; AffineWriteOpInterface \&gt;, OpTrait\l::TraitBase \&gt;" alt="" coords="1849,127,2080,227"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Op.html" title="mlir::Op\&lt; AffineWriteOpInterface \&gt;" alt="" coords="1367,87,1592,114"/>
+<area shape="rect" id="node5" href="$classmlir_1_1OpState.html" title="This is the concrete base class that holds the operation pointer and has non&#45;generic methods that onl..." alt="" coords="517,214,616,241"/>
+<area shape="rect" id="node9" href="$classmlir_1_1Op.html" title="This provides public APIs that all operations should have. " alt="" coords="968,273,1135,315"/>
+<area shape="rect" id="node16" href="$classmlir_1_1Op.html" title="mlir::Op\&lt; ConcreteType \&gt;" alt="" coords="1392,299,1567,326"/>
+<area shape="rect" id="node7" href="$classmlir_1_1FoldingHook.html" title="mlir::FoldingHook\&lt;\l AffineWriteOpInterface,\l llvm::is_one_of\&lt; OpTrait\l::OneResult\&lt; AffineWriteOpInterface\l \&gt;, Traits\&lt; AffineWriteOpInterface\l \&gt;... \&gt;::value \&gt;" alt="" coords="684,5,921,105"/>
+<area shape="rect" id="node8" href="$classmlir_1_1FoldingHook.html" title="This template defines the foldHook as used by AbstractOperation. " alt="" coords="5,219,209,275"/>
+<area shape="rect" id="node11" href="$classmlir_1_1FoldingHook.html" title="mlir::FoldingHook\&lt;\l ConcreteType, llvm\l::is_one_of\&lt; OpTrait\l::OneResult\&lt; ConcreteType\l \&gt;, Traits\&lt; ConcreteType\l \&gt;... \&gt;::value \&gt;" alt="" coords="473,332,660,432"/>
+<area shape="rect" id="node12" href="$classmlir_1_1detail_1_1Interface.html" title="This class represents an abstract interface. " alt="" coords="1378,170,1581,226"/>
+<area shape="rect" id="node15" href="$classmlir_1_1detail_1_1Interface.html" title="mlir::detail::Interface\l\&lt; ConcreteType, Operation\l *, Traits, Op\&lt; ConcreteType\l \&gt;, OpTrait::TraitBase \&gt;" alt="" coords="1869,251,2060,321"/>
+<area shape="rect" id="node13" href="$classmlir_1_1detail_1_1BaseType.html" title="BaseType" alt="" coords="1011,167,1092,194"/>
+<area shape="rect" id="node14" href="$classmlir_1_1OpInterface.html" title="This class represents the base of an operation interface. " alt="" coords="2129,232,2291,273"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="mlir::linalg::LinalgPromotionOptions" name="mlir::linalg::LinalgPromotionOptions">
+<area shape="rect" id="node2" href="$classllvm_1_1Optional.html" title="llvm::Optional\&lt; llvm\l::DenseSet\&lt; unsigned \&gt; \&gt;" alt="" coords="406,5,582,47"/>
+<area shape="rect" id="node3" href="$classllvm_1_1Optional.html" title="llvm::Optional\&lt; T \&gt;" alt="" coords="5,167,140,194"/>
+<area shape="rect" id="node4" href="$classllvm_1_1Optional.html" title="llvm::Optional\&lt; unsigned \&gt;" alt="" coords="405,71,583,98"/>
+<area shape="rect" id="node5" href="$classllvm_1_1Optional.html" title="llvm::Optional\&lt; llvm\l::SmallBitVector \&gt;" alt="" coords="425,123,563,164"/>
+<area shape="rect" id="node7" href="$classllvm_1_1Optional.html" title="llvm::Optional\&lt; DeallocBuffer\lCallbackFn \&gt;" alt="" coords="397,188,591,229"/>
+<area shape="rect" id="node8" href="$classllvm_1_1Optional.html" title="llvm::Optional\&lt; AllocBuffer\lCallbackFn \&gt;" alt="" coords="405,253,583,295"/>
+<area shape="rect" id="node9" href="$classllvm_1_1Optional.html" title="llvm::Optional\&lt; CopyCallbackFn \&gt;" alt="" coords="383,319,605,346"/>
+</map>

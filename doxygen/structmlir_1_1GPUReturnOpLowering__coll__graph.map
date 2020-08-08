@@ -1,0 +1,10 @@
+<map id="mlir::GPUReturnOpLowering" name="mlir::GPUReturnOpLowering">
+<area shape="rect" id="node2" href="$classmlir_1_1ConvertToLLVMPattern.html" title="Base class for operation conversions targeting the LLVM IR dialect. " alt="" coords="146,392,334,419"/>
+<area shape="rect" id="node3" href="$classmlir_1_1ConversionPattern.html" title="Base class for the conversion patterns. " alt="" coords="67,303,226,329"/>
+<area shape="rect" id="node4" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="5,213,144,240"/>
+<area shape="rect" id="node5" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="7,117,100,143"/>
+<area shape="rect" id="node6" href="$classllvm_1_1SmallVector.html" title="llvm::SmallVector\&lt;\l mlir::OperationName, 2 \&gt;" alt="" coords="124,109,297,151"/>
+<area shape="rect" id="node7" href="$classllvm_1_1SmallVector.html" title="llvm::SmallVector\&lt;\l T, N \&gt;" alt="" coords="144,5,277,47"/>
+<area shape="rect" id="node8" href="$classmlir_1_1TypeConverter.html" title="Type conversion class. " alt="" coords="169,213,306,240"/>
+<area shape="rect" id="node9" href="$classmlir_1_1LLVMTypeConverter.html" title="Conversion from types in the Standard dialect to the LLVM IR dialect. " alt="" coords="251,303,421,329"/>
+</map>

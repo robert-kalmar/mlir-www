@@ -1,0 +1,4 @@
+<map id="mlir::OpTrait::linalg::NInputs&lt; N &gt;::Impl&lt; ConcreteType &gt;" name="mlir::OpTrait::linalg::NInputs&lt; N &gt;::Impl&lt; ConcreteType &gt;">
+<area shape="rect" id="node2" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="mlir::OpTrait::TraitBase\l\&lt; ConcreteType, NInputs\l\&lt; N \&gt;::Impl \&gt;" alt="" coords="15,124,186,180"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="Helper class for implementing traits. " alt="" coords="5,5,196,47"/>
+</map>

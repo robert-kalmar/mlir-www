@@ -1,0 +1,9 @@
+<map id="include/mlir/Translation.h" name="include/mlir/Translation.h">
+<area shape="rect" id="node2" href="$TranslateRegistration_8cpp.html" title="lib/Dialect/SPIRV/Serialization\l/TranslateRegistration.cpp" alt="" coords="5,80,205,121"/>
+<area shape="rect" id="node3" href="$ConvertFromLLVMIR_8cpp.html" title="lib/Target/LLVMIR/Convert\lFromLLVMIR.cpp" alt="" coords="229,80,408,121"/>
+<area shape="rect" id="node4" href="$ConvertToLLVMIR_8cpp.html" title="lib/Target/LLVMIR/Convert\lToLLVMIR.cpp" alt="" coords="432,80,611,121"/>
+<area shape="rect" id="node5" href="$ConvertToNVVMIR_8cpp.html" title="lib/Target/LLVMIR/Convert\lToNVVMIR.cpp" alt="" coords="635,80,813,121"/>
+<area shape="rect" id="node6" href="$ConvertToROCDLIR_8cpp.html" title="lib/Target/LLVMIR/Convert\lToROCDLIR.cpp" alt="" coords="837,80,1016,121"/>
+<area shape="rect" id="node7" href="$LLVMAVX512Intr_8cpp.html" title="lib/Target/LLVMIR/LLVMAVX512\lIntr.cpp" alt="" coords="1041,80,1255,121"/>
+<area shape="rect" id="node8" href="$Translation_8cpp.html" title="lib/Translation/Translation.cpp" alt="" coords="1279,87,1475,114"/>
+</map>

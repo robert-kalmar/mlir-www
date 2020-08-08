@@ -1,0 +1,5 @@
+<map id="mlir::detail::FusedLocationStorage" name="mlir::detail::FusedLocationStorage">
+<area shape="rect" id="node2" href="$classmlir_1_1AttributeStorage.html" title="Base storage class appearing in an attribute. " alt="" coords="196,13,341,39"/>
+<area shape="rect" id="node5" href="$classmlir_1_1Attribute.html" title="Attributes are known&#45;constant values of operations and functions. " alt="" coords="453,38,553,65"/>
+<area shape="rect" id="node3" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="5,5,147,47"/>
+</map>

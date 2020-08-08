@@ -1,0 +1,5 @@
+<map id="mlir::InlinerInterface" name="mlir::InlinerInterface">
+<area shape="rect" id="node2" href="$classmlir_1_1DialectInterfaceCollection.html" title="mlir::DialectInterfaceCollection\l\&lt; DialectInlinerInterface \&gt;" alt="" coords="643,5,844,47"/>
+<area shape="rect" id="node3" href="$classmlir_1_1detail_1_1DialectInterfaceCollectionBase.html" title="This class is the base class for a collection of instances for a specific interface kind..." alt="" coords="5,11,188,52"/>
+<area shape="rect" id="node4" href="$classmlir_1_1DialectInterfaceCollection.html" title="A collection of dialect interfaces within a context, for a given concrete interface type..." alt="" coords="237,40,439,81"/>
+</map>

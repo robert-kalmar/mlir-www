@@ -1,0 +1,5 @@
+<map id="mlir::detail::AffineMapAttributeStorage" name="mlir::detail::AffineMapAttributeStorage">
+<area shape="rect" id="node2" href="$classmlir_1_1AttributeStorage.html" title="Base storage class appearing in an attribute. " alt="" coords="5,96,151,123"/>
+<area shape="rect" id="node3" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="7,5,149,47"/>
+<area shape="rect" id="node4" href="$classmlir_1_1AffineMap.html" title="A multi&#45;dimensional affine map Affine map&#39;s are immutable like Type&#39;s, and they are uniqued..." alt="" coords="175,96,285,123"/>
+</map>

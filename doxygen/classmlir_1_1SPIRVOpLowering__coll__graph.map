@@ -1,0 +1,10 @@
+<map id="mlir::SPIRVOpLowering&lt; SourceOp &gt;" name="mlir::SPIRVOpLowering&lt; SourceOp &gt;">
+<area shape="rect" id="node2" href="$structmlir_1_1OpConversionPattern.html" title="OpConversionPattern is a wrapper around ConversionPattern that allows for matching and rewriting agai..." alt="" coords="13,404,189,445"/>
+<area shape="rect" id="node3" href="$classmlir_1_1ConversionPattern.html" title="Base class for the conversion patterns. " alt="" coords="22,303,181,329"/>
+<area shape="rect" id="node4" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="5,213,144,240"/>
+<area shape="rect" id="node5" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="7,117,100,143"/>
+<area shape="rect" id="node6" href="$classllvm_1_1SmallVector.html" title="llvm::SmallVector\&lt;\l mlir::OperationName, 2 \&gt;" alt="" coords="124,109,297,151"/>
+<area shape="rect" id="node7" href="$classllvm_1_1SmallVector.html" title="llvm::SmallVector\&lt;\l T, N \&gt;" alt="" coords="144,5,277,47"/>
+<area shape="rect" id="node8" href="$classmlir_1_1TypeConverter.html" title="Type conversion class. " alt="" coords="169,213,306,240"/>
+<area shape="rect" id="node9" href="$classmlir_1_1SPIRVTypeConverter.html" title="Type conversion from standard types to SPIR&#45;V types for shader interface. " alt="" coords="148,353,327,380"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="lib/Dialect/Linalg/Transforms/PassDetail.h" name="lib/Dialect/Linalg/Transforms/PassDetail.h">
+<area shape="rect" id="node2" href="$DropUnitDims_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/DropUnitDims.cpp" alt="" coords="5,95,209,136"/>
+<area shape="rect" id="node3" href="$Fusion_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Fusion.cpp" alt="" coords="234,95,394,136"/>
+<area shape="rect" id="node4" href="$Loops_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Loops.cpp" alt="" coords="419,95,575,136"/>
+<area shape="rect" id="node5" href="$Promotion_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Promotion.cpp" alt="" coords="599,95,779,136"/>
+<area shape="rect" id="node6" href="$TensorsToBuffers_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/TensorsToBuffers.cpp" alt="" coords="803,95,1028,136"/>
+<area shape="rect" id="node7" href="$Tiling_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Tiling.cpp" alt="" coords="1053,95,1205,136"/>
+</map>

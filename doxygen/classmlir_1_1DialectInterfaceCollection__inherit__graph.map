@@ -1,0 +1,7 @@
+<map id="mlir::DialectInterfaceCollection&lt; InterfaceType &gt;" name="mlir::DialectInterfaceCollection&lt; InterfaceType &gt;">
+<area shape="rect" id="node3" href="$classmlir_1_1DialectInterfaceCollection.html" title="mlir::DialectInterfaceCollection\l\&lt; mlir::OpAsmDialectInterface \&gt;" alt="" coords="694,5,905,47"/>
+<area shape="rect" id="node4" href="$classmlir_1_1DialectInterfaceCollection.html" title="mlir::DialectInterfaceCollection\l\&lt; mlir::OpFolderDialectInterface \&gt;" alt="" coords="689,71,909,112"/>
+<area shape="rect" id="node5" href="$classmlir_1_1DialectInterfaceCollection.html" title="mlir::DialectInterfaceCollection\l\&lt; DialectInlinerInterface \&gt;" alt="" coords="699,136,900,177"/>
+<area shape="rect" id="node2" href="$classmlir_1_1detail_1_1DialectInterfaceCollectionBase.html" title="This class is the base class for a collection of instances for a specific interface kind..." alt="" coords="5,71,188,112"/>
+<area shape="rect" id="node6" href="$classmlir_1_1InlinerInterface.html" title="This interface provides the hooks into the inlining interface. " alt="" coords="959,143,1096,170"/>
+</map>

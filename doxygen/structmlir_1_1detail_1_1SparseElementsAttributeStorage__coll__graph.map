@@ -1,0 +1,12 @@
+<map id="mlir::detail::SparseElementsAttributeStorage" name="mlir::detail::SparseElementsAttributeStorage">
+<area shape="rect" id="node2" href="$classmlir_1_1AttributeStorage.html" title="Base storage class appearing in an attribute. " alt="" coords="196,13,341,39"/>
+<area shape="rect" id="node6" href="$classmlir_1_1Attribute.html" title="Attributes are known&#45;constant values of operations and functions. " alt="" coords="506,46,606,73"/>
+<area shape="rect" id="node3" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node4" href="$classmlir_1_1DenseElementsAttr.html" title="An attribute that represents a reference to a dense vector or tensor object. " alt="" coords="1127,46,1293,73"/>
+<area shape="rect" id="node5" href="$classmlir_1_1ElementsAttr.html" title="A base attribute that represents a reference to a static shaped tensor or vector constant. " alt="" coords="902,46,1029,73"/>
+<area shape="rect" id="node7" href="$classmlir_1_1DenseIntElementsAttr.html" title="An attribute that represents a reference to a dense integer vector or tensor object. " alt="" coords="1120,102,1300,129"/>
+<area shape="rect" id="node8" href="$classmlir_1_1DenseIntOrFPElementsAttr.html" title="An attribute class for specializing behavior of Int and Floating&#45;point densely packed string arrays..." alt="" coords="860,119,1071,146"/>
+<area shape="rect" id="node9" href="$classmlir_1_1detail_1_1StorageUserBase.html" title="Utility class for implementing users of storage classes uniqued by a StorageUniquer. " alt="" coords="419,97,693,168"/>
+<area shape="rect" id="node10" href="$classBaseT.html" title="BaseT" alt="" coords="239,101,299,127"/>
+<area shape="rect" id="node12" href="$classfriend.html" title="friend" alt="" coords="529,193,583,219"/>
+</map>

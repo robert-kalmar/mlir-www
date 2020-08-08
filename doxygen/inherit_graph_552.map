@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmlir_1_1OwningOpRefBase.html" title="mlir::OwningOpRefBase\l\&lt; ModuleOp \&gt;" alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OwningModuleRef.html" title="This class acts as an owning reference to a module, and will automatically destroy the held module on..." alt="" coords="216,13,375,39"/>
+</map>

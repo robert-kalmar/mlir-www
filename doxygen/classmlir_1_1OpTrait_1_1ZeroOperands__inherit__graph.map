@@ -1,0 +1,13 @@
+<map id="mlir::OpTrait::ZeroOperands&lt; ConcreteType &gt;" name="mlir::OpTrait::ZeroOperands&lt; ConcreteType &gt;">
+<area shape="rect" id="node4" href="$classmlir_1_1OpTrait_1_1ZeroOperands.html" title="mlir::OpTrait::ZeroOperands\l\&lt; ModuleOp \&gt;" alt="" coords="1095,93,1279,135"/>
+<area shape="rect" id="node7" href="$classmlir_1_1OpTrait_1_1ZeroOperands.html" title="mlir::OpTrait::ZeroOperands\l\&lt; FuncOp \&gt;" alt="" coords="1095,203,1279,244"/>
+<area shape="rect" id="node10" href="$classmlir_1_1OpTrait_1_1ZeroOperands.html" title="mlir::OpTrait::ZeroOperands\l\&lt; ModuleTerminatorOp \&gt;" alt="" coords="1095,284,1279,325"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="mlir::OpTrait::TraitBase\l\&lt; ConcreteType, ZeroOperands \&gt;" alt="" coords="445,203,664,244"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title="Helper class for implementing traits. " alt="" coords="5,203,196,244"/>
+<area shape="rect" id="node5" href="$classmlir_1_1Op.html" title="mlir::Op\&lt; ModuleOp,\l OpTrait::ZeroOperands,\l OpTrait::ZeroResult,\l OpTrait::IsIsolatedFromAbove,\l OpTrait::AffineScope, OpTrait\l::SymbolTable, OpTrait::SingleBlockImplicit\lTerminator\&lt; ModuleTerminatorOp \&gt;::Impl,\l SymbolOpInterface::Trait, OpTrait::NoRegionArguments \&gt;" alt="" coords="1328,5,1692,135"/>
+<area shape="rect" id="node6" href="$classmlir_1_1ModuleOp.html" title="ModuleOp represents a module, or an operation containing one region with a single block containing op..." alt="" coords="1772,57,1883,83"/>
+<area shape="rect" id="node8" href="$classmlir_1_1Op.html" title="mlir::Op\&lt; FuncOp, OpTrait\l::ZeroOperands, OpTrait\l::ZeroResult, OpTrait::OneRegion,\l OpTrait::IsIsolatedFromAbove,\l OpTrait::FunctionLike, OpTrait\l::AutomaticAllocationScope, OpTrait\l::AffineScope, CallableOpInterface\l::Trait, SymbolOpInterface::Trait \&gt;" alt="" coords="1393,159,1627,288"/>
+<area shape="rect" id="node9" href="$classmlir_1_1FuncOp.html" title="FuncOp represents a function, or an operation containing one region that forms a CFG(Control Flow Gra..." alt="" coords="1779,210,1876,237"/>
+<area shape="rect" id="node11" href="$classmlir_1_1Op.html" title="mlir::Op\&lt; ModuleTerminator\lOp, OpTrait::ZeroOperands,\l OpTrait::ZeroResult, OpTrait\l::HasParent\&lt; ModuleOp \&gt;::Impl,\l OpTrait::IsTerminator \&gt;" alt="" coords="1404,313,1616,398"/>
+<area shape="rect" id="node12" href="$classmlir_1_1ModuleTerminatorOp.html" title="The ModuleTerminatorOp is a special terminator operation for the body of a ModuleOp, it has no semantic meaning beyond keeping the body of a ModuleOp well&#45;formed. " alt="" coords="1741,342,1913,369"/>
+</map>

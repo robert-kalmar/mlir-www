@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmlir_1_1TypeConverter.html" title="Type conversion class. " alt="" coords="5,71,143,98"/>
+<area shape="rect" id="node2" href="$classmlir_1_1BufferAssignmentTypeConverter.html" title="A helper type converter class for using inside Buffer Assignment operation conversion patterns..." alt="" coords="191,5,375,47"/>
+<area shape="rect" id="node3" href="$classmlir_1_1LLVMTypeConverter.html" title="Conversion from types in the Standard dialect to the LLVM IR dialect. " alt="" coords="197,71,368,98"/>
+<area shape="rect" id="node4" href="$classmlir_1_1SPIRVTypeConverter.html" title="Type conversion from standard types to SPIR&#45;V types for shader interface. " alt="" coords="193,122,372,149"/>
+</map>

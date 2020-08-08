@@ -1,0 +1,12 @@
+<map id="include/mlir/Dialect/Quant/QuantTypes.h" name="include/mlir/Dialect/Quant/QuantTypes.h">
+<area shape="rect" id="node2" href="$FakeQuantSupport_8h.html" title="include/mlir/Dialect\l/Quant/FakeQuantSupport.h" alt="" coords="191,95,377,136"/>
+<area shape="rect" id="node4" href="$FakeQuantSupport_8cpp.html" title="lib/Dialect/Quant/Utils\l/FakeQuantSupport.cpp" alt="" coords="5,184,165,225"/>
+<area shape="rect" id="node5" href="$UniformSupport_8h.html" title="include/mlir/Dialect\l/Quant/UniformSupport.h" alt="" coords="407,95,574,136"/>
+<area shape="rect" id="node9" href="$QuantOps_8cpp.html" title="lib/Dialect/Quant/IR\l/QuantOps.cpp" alt="" coords="598,95,735,136"/>
+<area shape="rect" id="node10" href="$QuantTypes_8cpp.html" title="lib/Dialect/Quant/IR\l/QuantTypes.cpp" alt="" coords="759,95,897,136"/>
+<area shape="rect" id="node11" href="$Dialect_2Quant_2IR_2TypeParser_8cpp.html" title="lib/Dialect/Quant/IR\l/TypeParser.cpp" alt="" coords="921,95,1058,136"/>
+<area shape="rect" id="node3" href="$ConvertSimQuant_8cpp.html" title="lib/Dialect/Quant/Transforms\l/ConvertSimQuant.cpp" alt="" coords="189,184,379,225"/>
+<area shape="rect" id="node6" href="$ConvertConst_8cpp.html" title="lib/Dialect/Quant/Transforms\l/ConvertConst.cpp" alt="" coords="403,184,592,225"/>
+<area shape="rect" id="node7" href="$QuantizeUtils_8cpp.html" title="lib/Dialect/Quant/Utils\l/QuantizeUtils.cpp" alt="" coords="617,184,767,225"/>
+<area shape="rect" id="node8" href="$UniformSupport_8cpp.html" title="lib/Dialect/Quant/Utils\l/UniformSupport.cpp" alt="" coords="791,184,942,225"/>
+</map>

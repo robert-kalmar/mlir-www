@@ -1,0 +1,7 @@
+<map id="include/mlir/Dialect/SPIRV/Passes.h" name="include/mlir/Dialect/SPIRV/Passes.h">
+<area shape="rect" id="node2" href="$InitAllPasses_8h.html" title="include/mlir/InitAllPasses.h" alt="" coords="5,109,185,136"/>
+<area shape="rect" id="node3" href="$DecorateSPIRVCompositeTypeLayoutPass_8cpp.html" title="lib/Dialect/SPIRV/Transforms\l/DecorateSPIRVCompositeTypeLayout\lPass.cpp" alt="" coords="210,95,461,151"/>
+<area shape="rect" id="node4" href="$LowerABIAttributesPass_8cpp.html" title="lib/Dialect/SPIRV/Transforms\l/LowerABIAttributesPass.cpp" alt="" coords="485,102,679,143"/>
+<area shape="rect" id="node5" href="$RewriteInsertsPass_8cpp.html" title="lib/Dialect/SPIRV/Transforms\l/RewriteInsertsPass.cpp" alt="" coords="703,102,898,143"/>
+<area shape="rect" id="node6" href="$UpdateVCEPass_8cpp.html" title="lib/Dialect/SPIRV/Transforms\l/UpdateVCEPass.cpp" alt="" coords="922,102,1117,143"/>
+</map>

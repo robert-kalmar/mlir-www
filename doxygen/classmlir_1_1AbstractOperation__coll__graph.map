@@ -1,0 +1,6 @@
+<map id="mlir::AbstractOperation" name="mlir::AbstractOperation">
+<area shape="rect" id="node2" href="$structmlir_1_1LogicalResult.html" title="Values that can be used to signal success/failure. " alt="" coords="218,52,349,79"/>
+<area shape="rect" id="node10" href="$classmlir_1_1ParseResult.html" title="This class represents success/failure for operation parsing. " alt="" coords="555,91,677,117"/>
+<area shape="rect" id="node5" href="$classmlir_1_1TypeID.html" title="This class provides an efficient unique identifier for a specific C++ type. " alt="" coords="569,193,663,220"/>
+<area shape="rect" id="node6" href="$classmlir_1_1Dialect.html" title="Dialects are groups of MLIR operations and behavior associated with the entire group. " alt="" coords="570,244,662,271"/>
+</map>

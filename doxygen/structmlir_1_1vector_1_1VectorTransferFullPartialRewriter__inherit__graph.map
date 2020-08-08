@@ -1,0 +1,4 @@
+<map id="mlir::vector::VectorTransferFullPartialRewriter" name="mlir::vector::VectorTransferFullPartialRewriter">
+<area shape="rect" id="node2" href="$classmlir_1_1RewritePattern.html" title="RewritePattern is the common base class for all DAG to DAG replacements. " alt="" coords="27,80,165,107"/>
+<area shape="rect" id="node3" href="$classmlir_1_1Pattern.html" title="Instances of Pattern can be matched against SSA IR. " alt="" coords="49,5,143,32"/>
+</map>

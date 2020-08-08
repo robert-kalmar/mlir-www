@@ -1,0 +1,15 @@
+<map id="BaseType" name="BaseType">
+<area shape="rect" id="node2" href="$classmlir_1_1detail_1_1Interface.html" title="This class represents an abstract interface. " alt="" coords="136,211,339,267"/>
+<area shape="rect" id="node3" href="$classmlir_1_1detail_1_1Interface.html" title="mlir::detail::Interface\l\&lt; ConcreteType, Attribute,\l Traits, Attribute, AttributeTrait\l::TraitBase \&gt;" alt="" coords="596,25,795,95"/>
+<area shape="rect" id="node5" href="$classmlir_1_1detail_1_1Interface.html" title="mlir::detail::Interface\l\&lt; AffineWriteOpInterface,\l Operation *, detail::AffineWrite\lOpInterfaceInterfaceTraits, Op\l\&lt; AffineWriteOpInterface \&gt;, OpTrait\l::TraitBase \&gt;" alt="" coords="819,113,1049,213"/>
+<area shape="rect" id="node8" href="$classmlir_1_1detail_1_1Interface.html" title="mlir::detail::Interface\l\&lt; ConcreteType, Operation\l *, Traits, Op\&lt; ConcreteType\l \&gt;, OpTrait::TraitBase \&gt;" alt="" coords="600,203,791,274"/>
+<area shape="rect" id="node12" href="$classmlir_1_1detail_1_1Interface.html" title="mlir::detail::Interface\l\&lt; AffineReadOpInterface,\l Operation *, detail::AffineRead\lOpInterfaceInterfaceTraits, Op\l\&lt; AffineReadOpInterface \&gt;, OpTrait\l::TraitBase \&gt;" alt="" coords="819,294,1049,394"/>
+<area shape="rect" id="node13" href="$classmlir_1_1detail_1_1Interface.html" title="mlir::detail::Interface\l\&lt; ConcreteType, Type,\l Traits, Type, TypeTrait\l::TraitBase \&gt;" alt="" coords="616,382,775,453"/>
+<area shape="rect" id="node4" href="$classmlir_1_1AttributeInterface.html" title="This class represents the base of an attribute interface. " alt="" coords="1073,39,1243,81"/>
+<area shape="rect" id="node6" href="$classmlir_1_1OpInterface.html" title="mlir::OpInterface\&lt;\l AffineWriteOpInterface,\l detail::AffineWriteOpInterface\lInterfaceTraits \&gt;" alt="" coords="1468,175,1667,246"/>
+<area shape="rect" id="node7" href="$classmlir_1_1AffineWriteOpInterface.html" title="mlir::AffineWriteOpInterface" alt="" coords="1716,197,1900,224"/>
+<area shape="rect" id="node9" href="$classmlir_1_1OpInterface.html" title="This class represents the base of an operation interface. " alt="" coords="1077,218,1239,259"/>
+<area shape="rect" id="node10" href="$classmlir_1_1OpInterface.html" title="mlir::OpInterface\&lt;\l AffineReadOpInterface,\l detail::AffineReadOpInterface\lInterfaceTraits \&gt;" alt="" coords="1468,282,1667,353"/>
+<area shape="rect" id="node11" href="$classmlir_1_1AffineReadOpInterface.html" title="mlir::AffineReadOpInterface" alt="" coords="1716,304,1900,331"/>
+<area shape="rect" id="node14" href="$classmlir_1_1TypeInterface.html" title="This class represents the base of a type interface. " alt="" coords="1073,397,1243,438"/>
+</map>

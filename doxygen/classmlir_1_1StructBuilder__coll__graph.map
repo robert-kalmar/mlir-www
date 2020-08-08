@@ -1,0 +1,6 @@
+<map id="mlir::StructBuilder" name="mlir::StructBuilder">
+<area shape="rect" id="node2" href="$classmlir_1_1Value.html" title="This class represents an instance of an SSA value in the MLIR system, representing a computable value..." alt="" coords="63,200,147,227"/>
+<area shape="rect" id="node4" href="$classmlir_1_1Type.html" title="Instances of the Type class are uniqued, have an immutable identifier and an optional mutable compone..." alt="" coords="189,200,269,227"/>
+<area shape="rect" id="node5" href="$classmlir_1_1TypeStorage.html" title="Base storage class appearing in a Type. " alt="" coords="216,103,341,130"/>
+<area shape="rect" id="node6" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="208,5,349,47"/>
+</map>

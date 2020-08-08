@@ -1,0 +1,5 @@
+<map id="include/mlir/Dialect/SPIRV/SPIRVBinaryUtils.h" name="include/mlir/Dialect/SPIRV/SPIRVBinaryUtils.h">
+<area shape="rect" id="node2" href="$Deserializer_8cpp.html" title="lib/Dialect/SPIRV/Serialization\l/Deserializer.cpp" alt="" coords="5,95,205,136"/>
+<area shape="rect" id="node3" href="$Serializer_8cpp.html" title="lib/Dialect/SPIRV/Serialization\l/Serializer.cpp" alt="" coords="229,95,429,136"/>
+<area shape="rect" id="node4" href="$SPIRVBinaryUtils_8cpp.html" title="lib/Dialect/SPIRV/Serialization\l/SPIRVBinaryUtils.cpp" alt="" coords="453,95,653,136"/>
+</map>

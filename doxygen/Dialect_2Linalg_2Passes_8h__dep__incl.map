@@ -1,0 +1,10 @@
+<map id="include/mlir/Dialect/Linalg/Passes.h" name="include/mlir/Dialect/Linalg/Passes.h">
+<area shape="rect" id="node2" href="$InitAllPasses_8h.html" title="include/mlir/InitAllPasses.h" alt="" coords="5,102,185,129"/>
+<area shape="rect" id="node3" href="$LinalgToLLVM_8cpp.html" title="lib/Conversion/LinalgToLLVM\l/LinalgToLLVM.cpp" alt="" coords="210,95,402,136"/>
+<area shape="rect" id="node4" href="$DropUnitDims_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/DropUnitDims.cpp" alt="" coords="427,95,631,136"/>
+<area shape="rect" id="node5" href="$Fusion_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Fusion.cpp" alt="" coords="655,95,815,136"/>
+<area shape="rect" id="node6" href="$Loops_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Loops.cpp" alt="" coords="840,95,996,136"/>
+<area shape="rect" id="node7" href="$Promotion_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Promotion.cpp" alt="" coords="1020,95,1200,136"/>
+<area shape="rect" id="node8" href="$TensorsToBuffers_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/TensorsToBuffers.cpp" alt="" coords="1224,95,1449,136"/>
+<area shape="rect" id="node9" href="$Tiling_8cpp.html" title="lib/Dialect/Linalg\l/Transforms/Tiling.cpp" alt="" coords="1474,95,1626,136"/>
+</map>

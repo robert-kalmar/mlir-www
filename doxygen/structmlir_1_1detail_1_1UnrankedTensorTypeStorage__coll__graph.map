@@ -1,0 +1,6 @@
+<map id="mlir::detail::UnrankedTensorTypeStorage" name="mlir::detail::UnrankedTensorTypeStorage">
+<area shape="rect" id="node2" href="$structmlir_1_1detail_1_1ShapedTypeStorage.html" title="Shaped Type Storage. " alt="" coords="17,275,180,316"/>
+<area shape="rect" id="node3" href="$classmlir_1_1TypeStorage.html" title="Base storage class appearing in a Type. " alt="" coords="36,96,161,123"/>
+<area shape="rect" id="node5" href="$classmlir_1_1Type.html" title="Instances of the Type class are uniqued, have an immutable identifier and an optional mutable compone..." alt="" coords="115,185,195,212"/>
+<area shape="rect" id="node4" href="$classmlir_1_1StorageUniquer_1_1BaseStorage.html" title="This class acts as the base storage that all storage classes must derived from. " alt="" coords="28,5,169,47"/>
+</map>
